@@ -13,9 +13,8 @@ void main()
     scanf("%d", &a);
     printf("\nEnter second number:");
     scanf("%d",&b);
-    temp = a; //assigning value of 'a' to temporary variable
     printf("\nBefore swap:\na=%d\nb=%d\n",temp,b);//printing before swap values
-    //swapping variables by assigning one's value to another and vice versa
+    temp = a; //assigning value of 'a' to temporary variable
     a=b;
     b=temp;
     printf("\nAfter Swap:\na=%d\nb=%d\n",a,b);
