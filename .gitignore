@@ -1,3 +1,4 @@
 *.exe
 .vscode/tasks.json
 build/Debug/ratio.o
+.vscode/settings.json

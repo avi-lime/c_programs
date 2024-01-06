@@ -2,7 +2,7 @@
 
 void main()
 {
-    int n, min = 0, max = 0;
+    int n, min, max;
     printf("Enter the length of the array: ");
     scanf("%d", &n);
     int arr[n];
@@ -10,12 +10,11 @@ void main()
     for (int i = 0; i < n; i++)
         scanf("%d", &arr[i]);
 
+    min = arr[0], max = arr[0];
     for (int i = 0; i < n; i++)
     {
-        if (arr[max] < arr[i])
-            max = i;
-        if (arr[min] > arr[i])
-            min = i;
+        min = min < arr[i] ? min : arr[i];
+        max = max > arr[i] ? max : arr[i]; 
     }
-    printf("The greatest element of the array is %d\nThe least element of the array is %d", arr[max], arr[min]);
+    printf("The greatest element of the array is %d\nThe least element of the array is %d", max, min);
 }
